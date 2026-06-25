@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abidul Hasan Amin — Engineer & Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <canvas id="matrix-canvas"></canvas>
+
+
+    <div class="particles-wrap" id="particles"></div>
+
+
+    <nav>
+        <a href="#hero" class="nav-logo">amin.dev</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Awards</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="hero">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="hero-grid">
+            <div>
+                <div class="eyebrow">Available for opportunities <span class="blink">▮</span></div>
+                <h1>Abidul<br>Hasan <em>Amin</em></h1>
+                <p class="hero-desc">
+                    CSE Engineering Student · Frontend Developer · Graphic Designer · Content Creator · Competitive Programmer from Bangladesh.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="https://github.com/Amin-Hossain" target="_blank" class="btn-ghost">GitHub ↗</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="avatar-ring" onclick="openLightbox()" style="position:relative;">
+                    <img src="https://scontent.fdac140-1.fna.fbcdn.net/v/t39.30808-6/488259281_1204443264573735_6249119088166132542_n.jpg?stp=dst-jpg_tt6&cstp=mx1303x1426&ctp=s1303x1426&_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHrI-e0iRsoAlt11J-BVx6IUxhpTyzKrAVTGGlPLMqsBcm5S9RVo8nUK86rA2RkduTMaku4n0Zl-8aFVe1AHAmC&_nc_ohc=bsd7Na_WKfoQ7kNvwFheA5k&_nc_oc=AdpztwgXD7qnHKjFWUWVHj4Q65sI2005LTUDiqmyeV0AOTGjybFbwbI9ElsX-W5WeUA&_nc_zt=23&_nc_ht=scontent.fdac140-1.fna&_nc_gid=CPkM2YsTwSamngfG871uXA&_nc_ss=7b2a8&oh=00_Af-0D7pq1KzYjoXRpnlr2GMsurTk1WHvmqDWux3sYHkozw&oe=6A42961C"
+                        alt="Abidul Hasan Amin" onerror="this.parentElement.innerHTML='A'">
+                </div>
+                <div class="card-name">Abidul Hasan Amin</div>
+                <div class="card-role">// engineering student · cse · sbpgc</div>
+                <div class="badge-row">
+                    <span class="badge">CSE-27 SBPGC</span>
+                    <span class="badge hot">Python</span>
+                    <span class="badge hot">Web Dev</span>
+                    <span class="badge">Competitive Prog.</span>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-item"><span class="stat-num">18</span><span class="stat-label">Repos</span></div>
+                    <div class="stat-item"><span class="stat-num">3+</span><span class="stat-label">Live Sites</span></div>
+                    <div class="stat-item"><span class="stat-num">Top 200</span><span class="stat-label">ICPC/NCPC</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr">
+
+
+    <section id="about">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">01 — About</div>
+                <h2>Engineer by study,<br><em>builder by passion</em></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>I'm <strong>Abidul Hasan Amin</strong>, a CSE student at SBPGC, Bangladesh. I build things for the web — from clean frontend interfaces to full project structures. I've worked as a <strong>Graphic Designer at Tasfiya Telecom</strong>,
+                        handled all banner design for my college, built the college website's frontend, and assisted seniors on multiple development projects.</p>
+                    <p>Beyond tech, I'm a <strong>content creator</strong>, debater, department representative, and founder of <strong>Amin's Malaysian Board/Craft</strong>. I mentor students in HTML and serve as admin/moderator across multiple CSE communities.</p>
+                    <p>I compete in programming contests, enjoy building real things, and I'm always looking for the next problem worth solving.</p>
+                    <div class="about-links">
+                        <a href="https://github.com/Amin-Hossain" target="_blank" class="about-link">
+                            <i class="licon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </i> github.com/Amin-Hossain
+                        </a>
+                        <a href="https://www.linkedin.com/in/abidulhasanamin/" target="_blank" class="about-link">
+                            <i class="licon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </i> linkedin.com/in/abidulhasanamin
+                        </a>
+                        <a href="https://www.facebook.com/amin.hossain.361808" target="_blank" class="about-link">
+                            <i class="licon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </i> Facebook — Amin Hossain
+                        </a>
+                        <a href="https://www.instagram.com/ah_amin.official/" target="_blank" class="about-link">
+                            <i class="licon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </i> @ah_amin.official
+                        </a>
+                    </div>
+                </div>
+                <div class="about-right reveal">
+                    <h3>Experience</h3>
+                    <div class="xp-item">
+                        <div class="xp-dot"></div>
+                        <div>
+                            <div class="xp-title">Graphic Designer</div>
+                            <div class="xp-sub">Tasfiya Telecom</div>
+                            <div class="xp-desc">Designed marketing materials and brand assets for the company.</div>
+                        </div>
+                    </div>
+                    <div class="xp-item">
+                        <div class="xp-dot"></div>
+                        <div>
+                            <div class="xp-title">Frontend Developer</div>
+                            <div class="xp-sub">SBPGC College</div>
+                            <div class="xp-desc">Built the college website frontend; designed all college banners and supported senior dev projects.</div>
+                        </div>
+                    </div>
+                    <div class="xp-item">
+                        <div class="xp-dot"></div>
+                        <div>
+                            <div class="xp-title">Founder</div>
+                            <div class="xp-sub">Amin's Malaysian Board/Craft</div>
+                            <div class="xp-desc">Founded and runs an independent business from the ground up.</div>
+                        </div>
+                    </div>
+                    <div class="xp-item">
+                        <div class="xp-dot"></div>
+                        <div>
+                            <div class="xp-title">HTML Mentor</div>
+                            <div class="xp-sub">Community Teaching</div>
+                            <div class="xp-desc">Teaches HTML fundamentals to fellow students, bridging theory and practice.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr">
+
+
+    <section id="community">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">02 — Community</div>
+                <h2>Groups I <em>lead & serve</em></h2>
+            </div>
+            <div class="comm-grid">
+                <a href="https://www.facebook.com/groups/4030342413902999/" target="_blank" class="comm-card reveal">
+                    <div class="comm-icon">💻</div>
+                    <div>
+                        <div class="comm-title">CSE Society</div>
+                        <div class="comm-role">// Admin</div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/groups/sbpgc.cse.community/" target="_blank" class="comm-card reveal">
+                    <div class="comm-icon">🏫</div>
+                    <div>
+                        <div class="comm-title">SBPGC CSE Community</div>
+                        <div class="comm-role">// Admin</div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/groups/150056932994936/" target="_blank" class="comm-card reveal">
+                    <div class="comm-icon">🌐</div>
+                    <div>
+                        <div class="comm-title">AJANA</div>
+                        <div class="comm-role">// Admin</div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/groups/nu.cse.study.group/" target="_blank" class="comm-card reveal">
+                    <div class="comm-icon">🎓</div>
+                    <div>
+                        <div class="comm-title">NU CSE Student Community</div>
+                        <div class="comm-role">// Admin</div>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/groups/370299116662427/" target="_blank" class="comm-card reveal">
+                    <div class="comm-icon">🛡️</div>
+                    <div>
+                        <div class="comm-title">College Group</div>
+                        <div class="comm-role">// Moderator</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr">
+
+    <section id="skills">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">03 — Skills</div>
+                <h2>What I work with</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon">⌨️</div>
+                    <div class="skill-title">Programming Languages</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span><span class="skill-tag">PHP</span><span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🌐</div>
+                    <div class="skill-title">Frontend Development</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Responsive</span><span class="skill-tag">Netlify</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🎨</div>
+                    <div class="skill-title">Graphic Design</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Banner Design</span><span class="skill-tag">Brand Assets</span>
+                        <span class="skill-tag">Visual Identity</span><span class="skill-tag">Print & Digital</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🧩</div>
+                    <div class="skill-title">Problem Solving</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Competitive Prog.</span><span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span><span class="skill-tag">Beecrowd</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🛠️</div>
+                    <div class="skill-title">Tools & Platforms</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span><span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span><span class="skill-tag">Netlify</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">📹</div>
+                    <div class="skill-title">Content & Communication</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Content Creation</span><span class="skill-tag">Debate</span>
+                        <span class="skill-tag">Mentoring</span><span class="skill-tag">Community Mgmt</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr">
+
+
+    <section id="projects">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">04 — Projects</div>
+                <h2>Things I've built</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured reveal">
+                    <div class="project-tag">★ Featured Project</div>
+                    <div class="project-title">SBPGC CSE Club — Official Structure</div>
+                    <div class="project-desc">Designed and developed the official club structure website for SBPGC CSE Club. A fully responsive, print-ready page covering the club's full hierarchy, teams, activities, and online presence — built entirely with clean HTML & CSS.</div>
+                    <div class="project-stack">
+                        <span class="stack-chip">HTML5</span><span class="stack-chip">CSS3</span>
+                        <span class="stack-chip">Responsive</span><span class="stack-chip">Print-ready</span><span class="stack-chip">Netlify</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://sbpgccseclub.netlify.app/" target="_blank" class="project-link">↗ Live Site</a>
+                        <a href="https://github.com/Amin-Hossain" target="_blank" class="project-link">⌥ GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-tag">Frontend Project</div>
+                    <div class="project-title">Shopify E-commerce UI</div>
+                    <div class="project-desc">A clean, modern e-commerce frontend interface built with HTML and CSS. Deployed live on Netlify.</div>
+                    <div class="project-stack">
+                        <span class="stack-chip">HTML</span><span class="stack-chip">CSS</span><span class="stack-chip">Netlify</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://shopify-project4.netlify.app/" target="_blank" class="project-link">↗ Live Demo</a>
+                        <a href="https://github.com/Amin-Hossain/Shopify" target="_blank" class="project-link">⌥ Code</a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-tag">Python</div>
+                    <div class="project-title">Python Projects Collection</div>
+                    <div class="project-desc">A curated set of Python projects demonstrating core programming skills, logic building, and real-world problem solving.</div>
+                    <div class="project-stack">
+                        <span class="stack-chip">Python</span><span class="stack-chip">OOP</span><span class="stack-chip">Algorithms</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Amin-Hossain/Python-Project" target="_blank" class="project-link">⌥ View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-tag">Competitive Programming</div>
+                    <div class="project-title">C++ Problem Solutions</div>
+                    <div class="project-desc">A structured collection of basic to advanced C++ solutions covering data structures, algorithms, and competitive programming problems.</div>
+                    <div class="project-stack">
+                        <span class="stack-chip">C++</span><span class="stack-chip">DSA</span><span class="stack-chip">CP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Amin-Hossain/cpp" target="_blank" class="project-link">⌥ View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr">
+
+
+    <section id="achievements">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">05 — Achievements</div>
+                <h2>Recognition &amp; <em>competition results</em></h2>
+            </div>
+            <div class="ach-grid">
+                <div class="ach-card reveal">
+                    <div class="ach-icon">🥇</div>
+                    <div class="ach-title">1st Place — Code Clash</div>
+                    <div class="ach-sub">SBPGC Programming Contest — Top rank among all participants.</div>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">🤖</div>
+                    <div class="ach-title">12th Place — UIU Robotics</div>
+                    <div class="ach-sub">United International University Robotics Contest.</div>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">🏆</div>
+                    <div class="ach-title">Top 200 — ICPC & NCPC</div>
+                    <div class="ach-sub">Ranked under 200 in the prestigious ICPC & National Collegiate Programming Contest.</div>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">🎓</div>
+                    <div class="ach-title">HTML Mentor</div>
+                    <div class="ach-sub">Taught HTML fundamentals to fellow students — bridging theory with practice.</div>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">🌐</div>
+                    <div class="ach-title">ICTOB Campus Ambassador</div>
+                    <div class="ach-sub">Official campus representative for ICTOB program.</div>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">📣</div>
+                    <div class="ach-title">NUSDF Campus Ambassador</div>
+                    <div class="ach-sub">Campus representative for NUSDF.</div>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">🗣️</div>
+                    <div class="ach-title">Department Debater</div>
+                    <div class="ach-sub">Active debater representing the CSE department.</div>
+                </div>
+                <div class="ach-card reveal">
+                    <div class="ach-icon">👥</div>
+                    <div class="ach-title">Department Representative</div>
+                    <div class="ach-sub">Official student representative for the CSE department.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr">
+
+
+    <section id="activities">
+        <div class="section-inner">
+            <div class="section-header reveal">
+                <div class="section-eyebrow">06 — Activities</div>
+                <h2>Beyond the code</h2>
+            </div>
+            <div class="act-list">
+                <div class="act-item reveal"><span class="act-num">01</span>
+                    <div>
+                        <div class="act-text">Content Creator</div>
+                        <div class="act-sub">Creating educational and technical content online.</div>
+                    </div>
+                </div>
+                <div class="act-item reveal"><span class="act-num">02</span>
+                    <div>
+                        <div class="act-text">Founder — Amin's Malaysian Board/Craft</div>
+                        <div class="act-sub">Independent business venture, founded and managed independently.</div>
+                    </div>
+                </div>
+                <div class="act-item reveal"><span class="act-num">03</span>
+                    <div>
+                        <div class="act-text">ICTOB Campus Ambassador</div>
+                        <div class="act-sub">Representing and promoting ICTOB programs on campus.</div>
+                    </div>
+                </div>
+                <div class="act-item reveal"><span class="act-num">04</span>
+                    <div>
+                        <div class="act-text">NUSDF Campus Ambassador</div>
+                        <div class="act-sub">Official campus representative for NUSDF initiatives.</div>
+                    </div>
+                </div>
+                <div class="act-item reveal"><span class="act-num">05</span>
+                    <div>
+                        <div class="act-text">Department Representative</div>
+                        <div class="act-sub">Voice of CSE students in department-level decisions.</div>
+                    </div>
+                </div>
+                <div class="act-item reveal"><span class="act-num">06</span>
+                    <div>
+                        <div class="act-text">Debater</div>
+                        <div class="act-sub">Active participant in department-level debate competitions.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="hr">
+
+
+    <section id="contact">
+        <div class="section-inner">
+            <div class="contact-inner reveal">
+                <div class="section-eyebrow" style="justify-content:center;display:flex;">07 — Contact</div>
+                <h2 style="margin-bottom:20px;">Let's build something<br><em>together</em></h2>
+                <p>Whether it's a project, collaboration, opportunity, or just a conversation about tech — I'm open to it.</p>
+                <a href="https://www.linkedin.com/in/abidulhasanamin/" target="_blank" class="btn-primary">Connect on LinkedIn ↗</a>
+                <div class="contact-cards">
+                    <a href="https://github.com/Amin-Hossain" target="_blank" class="contact-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/abidulhasanamin/" target="_blank" class="contact-card">
+                        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>                        LinkedIn
+                    </a>
+                    <a href="https://www.facebook.com/amin.hossain.361808" target="_blank" class="contact-card">
+                        <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/ah_amin.official/" target="_blank" class="contact-card">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>                        Instagram
+                    </a>
+                    <a href="https://x.com/abidulhasanamin" target="_blank" class="contact-card">
+                        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> Twitter / X
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" onclick="closeLightbox()">
+        <span id="lb-close" onclick="closeLightbox()">✕</span>
+        <img src="https://scontent.fdac140-1.fna.fbcdn.net/v/t39.30808-6/488259281_1204443264573735_6249119088166132542_n.jpg?stp=dst-jpg_tt6&cstp=mx1303x1426&ctp=s1303x1426&_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHrI-e0iRsoAlt11J-BVx6IUxhpTyzKrAVTGGlPLMqsBcm5S9RVo8nUK86rA2RkduTMaku4n0Zl-8aFVe1AHAmC&_nc_ohc=bsd7Na_WKfoQ7kNvwFheA5k&_nc_oc=AdpztwgXD7qnHKjFWUWVHj4Q65sI2005LTUDiqmyeV0AOTGjybFbwbI9ElsX-W5WeUA&_nc_zt=23&_nc_ht=scontent.fdac140-1.fna&_nc_gid=CPkM2YsTwSamngfG871uXA&_nc_ss=7b2a8&oh=00_Af-0D7pq1KzYjoXRpnlr2GMsurTk1WHvmqDWux3sYHkozw&oe=6A42961C"
+            alt="Abidul Hasan Amin">
+    </div>
+
+    <footer>
+        <span>Designed &amp; Built by Abidul Hasan Amin · 2025</span>
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
